@@ -13,7 +13,10 @@ module.exports = (app) => {
 
   return [
     {
-      endpoints: [],
+      endpoints: [
+        ["post", "/register", "UserCanRegister"],
+        ["post", "/login", "UserCanLogin"],
+      ],
     },
   ];
 };
