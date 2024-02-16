@@ -3,7 +3,7 @@ const httpServer = requireHttpServer();
 const server = httpServer({});
 
 server.listen(
-  { port: process.env.PORT || 3000, host: "0.0.0.0" },
+  { port: process.env.PORT || 3000, host: "localhost" },
   (err, address) => {
     console.log("ADDRESS", address)
     if (err) {

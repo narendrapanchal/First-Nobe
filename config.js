@@ -42,7 +42,15 @@ module.exports = () => {
     loadEndpoints: "./core/loadEndpoints",
     validator: "./core/validator",
     endpoints: "./src/endpoints",
-    excludeFromAuth: ["POST /register", "POST /login"],
+    excludeFromAuth: [
+      "POST /photos",
+      "PUT /photos/:uuid",
+      "DELETE /photos/:uuid",
+      "GET /photo/:uuid",
+      "GET /photos",
+      "POST /register",
+      "POST /login"
+    ],
     responseKey: "respondResult",
     enableCORS: true,
   };
